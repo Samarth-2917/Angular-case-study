@@ -1,0 +1,40 @@
+.marTop24 {
+    margin-top: 1.5rem;
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    margin-top: 1.25rem;
+}
+
+.flex-display{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-list-view {
+    width: 50%;
+}
+
+.flex-gird-view {
+    width: 24.93%;
+}
+
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.product-details {
+    text-align: center;
+    width: 70%;
+    padding: 1rem;
+}

@@ -1,0 +1,8 @@
+<div class="outer">
+    <div class="container">
+        <app-timer [currentInstant]="currentTimeInstant"></app-timer>
+        <app-set-timer [timeInstant]="currentTimeInstant" (timerData)="timerStartedOrPaused($event)" (timerReset)="onTimerReset($event)"></app-set-timer>
+        <app-logs [startCount]="startCount" [pauseCount] = "pauseCount"></app-logs>
+        <app-timestamps [timeStamps] = "timestampsArray"></app-timestamps>
+    </div>
+</div>

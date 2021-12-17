@@ -1,0 +1,25 @@
+
+<hr>
+<div class="flex-display marTop24" style="justify-content: space-evenly;">
+    <button type="button" (click)="listView = false">Grid View</button>
+    <button type="button" (click)="listView = true">List View</button>
+    <select id="sort-by" class="ml10" (change)="sort($event)">
+        <option value="N" selected disabled>Select price filter</option>
+        <option value="L">Show Low to High Price</option>
+        <option value="H">Show High to Low Price</option>
+    </select>
+</div>
+
+
+
+<div class="flex-display">
+    <div class="card" [ngClass]="{'flex-list-view': listView, 'flex-grid-view': !listView}" *ngFor="let product of products">
+        <div><img style="width: 120px; height: 120px;" [src]="product.image" [alt]="product.title" [title]="product.title">
+        </div>
+        <div class="product-details">
+            <h4>{{ product.title }}</h4>
+            <div>{{product.price | currency:"INR"}}</div>
+            <div>{{ product.description }}</div>
+        </div>
+    </div>
+</div>

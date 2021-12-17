@@ -1,0 +1,20 @@
+.timer-buttons {
+    margin-top: 1rem;
+}
+
+button {
+    margin-left: .25rem;
+}
+
+.timer-control {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid black;
+    height: 260px;
+}
+
+.timeStamps {
+    margin-top: 1rem;
+    overflow-y: scroll;
+    max-height: 150px;
+}

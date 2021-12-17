@@ -1,0 +1,8 @@
+<table>
+    <tr>
+        <th *ngFor="let heading of headings; let i = index" (click)="sortTable(heading.headingName, i)">{{heading['headingName']}}</th>
+    </tr>
+    <tr *ngFor="let student of students">
+        <td *ngFor="let s of student | keyvalue: originalOrder">{{s.value}}</td>
+    </tr>
+</table>

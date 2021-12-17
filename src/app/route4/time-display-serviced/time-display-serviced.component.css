@@ -1,0 +1,10 @@
+.outer {
+    margin-top: 1.5rem;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto;
+}
